@@ -15,6 +15,6 @@ public class FindSecondLargestElementInList {
         return list.stream()
                 .sorted(Comparator.reverseOrder())
                 .skip(1)
-                .findFirst().orElse(0);
+                .findFirst().get();
     }
 }
