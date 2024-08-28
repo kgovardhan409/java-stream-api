@@ -1,5 +1,7 @@
 package com.govu.java.stream;
 
+import com.govu.java.stream.model.MicroService;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;

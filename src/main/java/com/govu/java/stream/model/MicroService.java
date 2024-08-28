@@ -1,4 +1,4 @@
-package com.govu.java.stream;
+package com.govu.java.stream.model;
 
 public class MicroService {
     private Long id;

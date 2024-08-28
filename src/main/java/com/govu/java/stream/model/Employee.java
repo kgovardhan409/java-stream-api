@@ -1,4 +1,6 @@
-package com.govu.java.stream;
+package com.govu.java.stream.model;
+
+import java.util.List;
 
 public class Employee {
     private Integer id;
@@ -7,6 +9,7 @@ public class Employee {
     private String department;
     private String address;
     private Long salary;
+    private List<IdProof> idProofList;
 
     public Employee() {
     }
@@ -18,6 +21,16 @@ public class Employee {
         this.department = department;
         this.address = address;
         this.salary = salary;
+    }
+
+    public Employee(Integer id, String name, String mobileNumber, String department, String address, Long salary, List<IdProof> idProofList) {
+        this.id = id;
+        this.name = name;
+        this.mobileNumber = mobileNumber;
+        this.department = department;
+        this.address = address;
+        this.salary = salary;
+        this.idProofList = idProofList;
     }
 
     public Integer getId() {
@@ -66,5 +79,25 @@ public class Employee {
 
     public void setSalary(Long salary) {
         this.salary = salary;
+    }
+
+    public List<IdProof> getIdProofList() {
+        return idProofList;
+    }
+
+    public void setIdProofList(List<IdProof> idProofList) {
+        this.idProofList = idProofList;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", mobileNumber='" + mobileNumber + '\'' +
+                ", department='" + department + '\'' +
+                ", address='" + address + '\'' +
+                ", salary=" + salary +
+                '}';
     }
 }
